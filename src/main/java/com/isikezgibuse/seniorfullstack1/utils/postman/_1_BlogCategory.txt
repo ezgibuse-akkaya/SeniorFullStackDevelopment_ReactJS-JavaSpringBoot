@@ -1,0 +1,86 @@
+Postman Share: https://dark-satellite-410622.postman.co/workspace/TechCareerAirtiesApi~20a82eaf-b492-45b2-b29b-1bad73de649b/collection/3467609-a9fdc797-cee3-417f-8eaf-7ca702e83793?action=share&creator=3467609
+
+
+
+
+SPEED DATA
+------------------------------------------------------------
+    http://localhost:4444/blog/categories/api/v1/speed/5
+
+    curl -X 'GET' \
+    'http://localhost:4444/blog/categories/api/v1/speed/5' \
+    -H 'accept: */*'
+
+
+DELETE ALL
+------------------------------------------------------------
+   http://localhost:4444/blog/categories/api/v1/delete/all
+
+   curl -X 'DELETE' \
+     'http://localhost:4444/blog/categories/api/v1/delete/all' \
+     -H 'accept: */*'
+
+
+LIST
+------------------------------------------------------------
+    http://localhost:4444/blog/categories/api/v1/list
+
+    curl -X 'GET' \
+      'http://localhost:4444/blog/categories/api/v1/list' \
+      -H 'accept: */*'
+
+FIND
+------------------------------------------------------------
+    http://localhost:4444/blog/categories/api/v1/find/1
+
+   curl -X 'GET' \
+     'http://localhost:4444/blog/categories/api/v1/find/1' \
+     -H 'accept: */*'
+
+
+CREATE
+------------------------------------------------------------
+     POST
+     http://localhost:4444/blog/categories/api/v1/create
+
+     {
+       "categoryName": "deneme"
+     }
+
+     curl -X 'POST' \
+       'http://localhost:4444/blog/categories/api/v1/create' \
+       -H 'accept: */*' \
+       -H 'Content-Type: application/json' \
+       -d '{
+
+       "categoryName": "deneme"
+     }'
+
+
+
+   UPDATE
+------------------------------------------------------------
+     PUT
+     http://localhost:4444/blog/categories/api/v1/update/4
+     {
+        "categoryName": "deneme9999"
+     }
+
+
+     curl -X 'PUT' \
+       'http://localhost:4444/blog/categories/api/v1/update/4' \
+       -H 'accept: */*' \
+       -H 'Content-Type: application/json' \
+       -d '{
+       "categoryName": "deneme9999"
+     }'
+
+
+   DELETE
+------------------------------------------------------------
+     DELETE
+     http://localhost:4444/blog/categories/api/v1/delete/4
+
+     curl -X 'DELETE' \
+       'http://localhost:4444/blog/categories/api/v1/delete/4' \
+       -H 'accept: */*'
